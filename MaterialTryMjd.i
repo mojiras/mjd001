@@ -33,22 +33,22 @@
   [./ud_ic]
     type = DataStructIC
     variable = 'ud'
-    file_name = 'mjdvd.csv'
+    file_name = 'mjdud.csv'
   [../]
   [./vd_ic]
     type = DataStructIC
     variable = 'vd'
-    file_name = 'mjdud.csv'
+    file_name = 'mjdvd.csv'
   [../]
   [./us_ic]
     type = DataStructIC
     variable = 'us'
-    file_name = 'mjdvs.csv'
+    file_name = 'mjdus.csv'
   [../]
   [./vs_ic]
     type = DataStructIC
     variable = 'vs'
-    file_name = 'mjdus.csv'
+    file_name = 'mjdvs.csv'
   [../]
 
 []
@@ -133,6 +133,10 @@
 [Outputs]
   execute_on = 'timestep_end'
   exodus = true
+  [./csv]
+    type = CSV
+    execute_on = final
+  [../]
 []
 
 
