@@ -1,0 +1,46 @@
+
+
+Framework Information:
+MOOSE Version:           git commit 918e055 on 2019-06-20
+LibMesh Version:         82a1cfa7e84f28c361a0ee7b59dcc99c67e11425
+PETSc Version:           3.11.2
+Current Time:            Tue Aug 13 09:30:53 2019
+Executable Timestamp:    Tue Aug 13 09:30:42 2019
+
+Parallelism:
+  Num Processors:          1
+  Num Threads:             1
+
+Mesh: 
+  Parallel Type:           replicated
+  Mesh Dimension:          2
+  Spatial Dimension:       2
+  Nodes:                   
+    Total:                 156
+    Local:                 156
+  Elems:                   
+    Total:                 270
+    Local:                 270
+  Num Subdomains:          2
+  Num Partitions:          1
+
+Nonlinear System:
+  Num DOFs:                156
+  Num Local DOFs:          156
+  Variables:               "diffused" 
+  Finite Element Types:    "LAGRANGE" 
+  Approximation Orders:    "FIRST" 
+
+Auxiliary System:
+  Num DOFs:                624
+  Num Local DOFs:          624
+  Variables:               { "ud" "vd" "us" "vs" } 
+  Finite Element Types:    "LAGRANGE" 
+  Approximation Orders:    "FIRST" 
+
+Execution Information:
+  Executioner:             Transient
+  TimeStepper:             ConstantDT
+  Solver Mode:             Preconditioned JFNK
+
+/var/spool/slurmd/job280138/slurm_script: line 16:  8539 Segmentation fault      ./mjd001-opt -i MaterialTryMjd.i
